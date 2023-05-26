@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    background-color: rgba(27, 25, 25, 0.629);
+    color: whitesmoke;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    font-family: "Roboto Slab",sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    align-items: center;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+.brand img{
+    width: 70px;
+    border-radius: 90px;
+    padding: 0px 4px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.playlist{
+    min-height: 73.9vh;
+    background-color: black;
+    color: whitesmoke;
+    font-family: "Roboto Slab",sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border: 10px;  
+    flex-direction: column;
+    padding-left: 25px;
+    justify-content: center;
+}
+.playlist h1{
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+.player
+{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.player .controls{
+    margin-top: 12px;
+}
+.controls i{
+    cursor: pointer;
+    padding: 0px 12px;
+}
+.player .range{
+    width: 60vw;
+    cursor: pointer;
+}
+.songs{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.song{
+    height: 50px;
+    display: flex;
+    font-family: "Roboto Slab",sans-serif;
+    background-color: white;
+    width:60%;
+    color: black;
+    margin:12px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 34px;
+    cursor: pointer;
+}
+.song img{
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 2px;
+}
+.timestamp{
+    margin: 0 12px;
+}
+.song_name{
+    position: absolute;
+    left: 20vw;
+    font-family: "Roboto Slab",sans-serif;
+}
+.song_name img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
